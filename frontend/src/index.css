@@ -1,3 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles can be added below */
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -22,13 +28,36 @@ a:hover {
   color: #535bf2;
 }
 
-body {
+/* 1) Reset all default spacing */
+html, body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
+
+/* 2) Fill background & set up flex container */
+body {
+
+
+  /* your purple gradient (adjust colors/angle as you like) */
+  /* background: linear-gradient(
+    135deg,
+    #6a5cff 0%,
+    #b508ff 100%
+  ); */
+
+  /* only hide horizontal overflow if ever needed */
+  overflow-x: hidden;
+  /* let content scroll vertically if it grows too tall */
+  overflow-y: hidden;
+}
+
+/* 3) Optional: box-sizing reset to avoid padding surprises */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 
 h1 {
   font-size: 3.2em;
