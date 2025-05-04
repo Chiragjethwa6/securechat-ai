@@ -41,8 +41,8 @@ const getOrCreateAIUser = async () => {
   if (!aiUser) {
     aiUser = new User({
       name: "AI Assistant",
-      email: "ai-assistant@securechat.ai",
-      password: "AIAssistant" + Date.now(), // Create a unique, secure password (not actually used)
+      email: process.env.AI_EMAIL,
+      password: process.env.AI_PASSWORD + Date.now(), // Create a unique, secure password (not actually used)
       isAI: true
     });
     
