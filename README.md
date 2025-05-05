@@ -1,10 +1,10 @@
 # SecureChat AI
 
-SecureChat AI is a real-time, end-to-end encrypted messaging application that allows users to chat securely and interact with an AI-powered chatbot. Built for privacy and efficiency, this app ensures secure communication using WebSockets, end-to-end encryption (E2EE), and self-destructing messages.
+SecureChat AI is a real-time, secure encrypted messaging application that allows users to chat securely and interact with an AI-powered chatbot. Built for privacy and efficiency, this app ensures secure communication using WebSockets, Server-Side Encryption, and self-destructing messages.
 
 ## Features
 
-- **End-to-End Encryption**: All messages are encrypted using AES-256-GCM
+- **Server-Side Encryption**: All messages are encrypted using AES-256-GCM
 - **Self-Destructing Messages**: Messages automatically delete after 30 seconds
 - **Real-Time Communication**: WebSockets enable instant message delivery
 - **AI Assistant**: Built-in AI chatbot powered by Google's Generative AI (Gemini)
@@ -94,7 +94,7 @@ The application should now be running at http://localhost:5173
 
 ## Security Features
 
-### End-to-End Encryption
+### Secure Encryption
 All messages are encrypted using AES-256-GCM encryption. The server stores only encrypted messages, ensuring that even if the database is compromised, message contents remain secure.
 
 ### Self-Destructing Messages
